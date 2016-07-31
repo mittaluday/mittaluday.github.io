@@ -1,0 +1,316 @@
+/*resetting browser defaults */
+p, a {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-size: inherit;
+    font: inherit;
+    text-decoration: none; 
+}
+
+/* imports */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+/* global defaults */
+html {
+    font-family: "Open Sans";
+    font-size: 24px;
+    
+}
+
+.pageBody, .headline{
+    font-family: "Open Sans";
+    font-size: 110%;
+    line-height:160%;
+    font-weight: 200;
+}
+
+
+.pageTitle {
+    font-size: 110%;
+}
+
+/*header styling begins */
+header > a {
+    font-size: 400%;
+    font-weight: 600;
+    text-decoration: none;
+    color: #3AD694;
+}
+
+header > a:hover {
+    color: mintcream;   
+}
+
+.headline {
+    font-size: 150%;
+    font-weight: 300; 
+}
+
+body > header {
+    text-align: center;
+    margin: 0.1% 0.75% 0 0.75%;   
+    padding: .75%;
+    /*border-bottom: 1px solid #dddddd;*/
+}
+header strong {
+    font-weight: 700;   
+}
+/*header styling ends */
+
+
+/*navigation styling begins*/
+nav {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*
+* navigation link decoration
+*/
+nav a {
+    text-decoration: none;
+    color:#3AD694;
+    font-family:merriweather; 
+    font-weight:300;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    padding: 1%;
+    margin: 4%;
+    font-size: 150%;
+    font-weight: 300;
+    border-bottom: 1px solid #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+
+nav li:hover{
+    border-bottom-color: #3AD694;
+    color: #3AD694;
+}
+/*navigation styling ends*/
+
+.pageBody {
+    margin-top: 1%;
+/*    margin-bottom:25vh;*/
+}
+
+/*barchart Stylign*/
+.barChart rect {
+    fill: #3AD694;
+}
+
+.barChart {
+    display: block;
+    margin: 0 auto;
+}
+.axis path,
+.axis line {
+  fill: none;
+  stroke: white;
+  opacity: 0.5;
+  shape-rendering: crispEdges;
+}
+
+.x.axis text, .y.axis text {
+  font: 10px sans-serif;
+  fill: mintcream; 
+  opacity: 0.8;
+}
+
+.x.axis .domain, .y.axis .domain{
+        stroke:#aaa;
+    }
+
+    .dot {
+        stroke: #000;
+    }
+
+    .viewbox{
+        border:1px solid #ccc;
+    }
+
+circle {
+    fill: #3AD694;
+}
+
+circle:hover {
+    fill: #3AD694;
+}
+    
+.charts {
+    margin-top: 30px;
+}
+
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+.button {
+    padding: 5px;
+   /* background-color: #ff8f66; */
+    color: white;
+    background-color: #3AD694;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #8fb3d1;
+    color: white;
+}
+
+.button:active{
+    background-color: #4c7699;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+
+.summaryDescriptionContainer {
+    color:darkgray;
+}
+
+.vertical-list-link-style {
+    text-decoration: none;
+    color:black;
+}
+
+.vertical-list-link-style:hover {
+    color: #3AD694;
+}
+
+.me-desc {
+    text-align: justify;
+}
+
+.footer-bar {
+    margin-bottom:2%;
+    margin-top:2%;
+    border-bottom: 1px solid #3AD694;
+}
+
+.link {
+    text-decoration: none;
+    color: #3AD694;
+}
+
+.link:hover {
+    color:#3AD694;
+}
+
+.project-desc {
+    text-decoration: none;
+    color: black;
+}
+
+.project-desc:hover {
+    color: black;
+}
+
+.fadeIn {
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/*
+* section headings are serif
+* and coffee brown in color 
+*/
+#section-header {    
+    text-align:center;
+    font-family:merriweather; 
+    font-weight:400; 
+    color:2d2c29 !important;
+    margin-bottom:2%;
+}
+
+.insta-block {
+    margin: 1% !important;
+}
+
+.footer {
+  background-color: #eee;
+  padding: 9vh;
+/*
+  position:absolute;
+  bottom:0;
+*/
+  width:100%;
+  color: #2D2C29;
+  text-align: center;
+}
+
+.footer a{
+    color: black;
+    display: inline-block;
+    margin: 0 45px;
+    background-repeat: no-repeat;
+}
+
+/*#nav-row {
+    padding-bottom: 2%;
+    border-bottom: 1px #3AD694;   
+} */
